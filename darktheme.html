@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark theme</title>
+    <style>
+        button{
+            background-color: black;
+            color: white;
+        }
+       
+    </style>
+</head>
+<body>
+    <button>Dark theme</button>
+    <script>
+        const changeColor = () => {
+            button = document.querySelector('button');
+           // button.classList.add(".dark");
+            background = document.querySelector("body");
+            if (background.style.backgroundColor === "black"){
+                background.style.backgroundColor = "white";
+                button.style.backgroundColor = "black";
+                button.style.changeColor = "white";
+            } else {
+                background.style.backgroundColor = "black";
+                button.style.backgroundColor = "white";
+                button.style.changeColor = "black";
+            }
+        }
+        button = document.querySelector('button');
+        button.addEventListener("click", changeColor);
+    </script>
+</body>
+</html>

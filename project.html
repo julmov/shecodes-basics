@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheCodes</title>
+    <style>
+        body{
+            background-color: #3f458a;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        h1{
+            border: solid 1px black;
+            padding: 15px;
+            box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+            background-color: #982c2c;
+        }
+        h2{
+            font-size: 24px;
+        }
+        main{
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        footer{
+            background: linear-gradient(#3f458a, #9198e5);
+            transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+            width: 100vw;
+        }
+        a{
+            color: rgb(198, 198, 185);
+            padding-bottom: 10px;
+        }
+        button{
+            background: #982c2c;
+            padding: 20px;
+            border: none;
+            border-radius: 25px;
+            margin: 30px;
+        }
+       button:hover{
+            background: transparent;
+            padding: 20px;
+            font-weight: bold;
+            border: solid 1px #982c2c;
+            color: #982c2c;
+            border-radius: 25px;
+        }
+   hr{
+  width: 100vw;
+  text-align: start;
+   }
+
+   p{
+    line-height: 2em;
+   }
+
+   span:hover{
+    cursor: pointer;
+    color: aliceblue;
+   }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>My favorite movie character is <span>Homlander</span></h1>
+    
+    <h2>Fictional character and one of the main antagonists in the comic book series <strong>The Boys</strong></h2>
+     </header>
+    
+     <main>
+    <img src="https://deadline.com/wp-content/uploads/2023/11/The-Boys-Homelander-e1720743363244.jpg?w=681&h=383&crop=1" alt="Greek Yogurt">
+    <p>The Homelander is a <em>patriotic</em> superhero who leads the superhero team, <strong>The Seven</strong>, and the most powerful superhuman created by Vought-American. The company's cover story for the Homelander is that he is an alien who landed in the United States as an infant, much like Superman. In reality, he and the rest of the original roster of the Seven were grown in a secret laboratory, the progeny of genetic material taken from Stormfront, who was injected with Compound V while still a member of the Hitler Youth. Homelander spent most of his young life chained down with a hydrogen bomb strapped to him in case he tried to escape. His mother was a mentally disabled woman who died giving birth to him.
+        <br />
+    </p>
+     <a href="https://en.wikipedia.org/wiki/Homelander" target="_blank"> Learn more on wikipedia</a>
+   </main>
+     <hr />
+    <footer>
+     <div>   
+    <button>Buy Comic Book</button>
+    <p>This page built by <a href="*">Yuliia Movchan</a></p>
+     </div>
+    </footer>
+    <script>
+             
+      const buyComic = () => {
+        let name = prompt("What is your name?");
+        alert("Thank you for your order, " + name)
+      
+      };
+      let element = document.querySelector("button");
+      element.addEventListener("click", buyComic);
+    
+    </script>
+</body>
+</html>

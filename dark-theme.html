@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piano - my hobby 🎹</title>
+    <style>
+      body {
+        background-color: #D9AFD9;
+        background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+
+
+
+      }
+
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+
+      .container {
+        max-width: 600px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      button {
+        background: white;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid plum;
+        font-size: 24px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        background-color: plum;
+        cursor: pointer;
+      }
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 20px;
+      }
+
+      .theme-button {
+        font-size: 12px;
+        background-color: black;
+        color: white;
+        padding: 5px 8px;
+      }
+      .theme-button:hover {
+        background-color: white;
+        color: black;
+      }
+      .intro-picture {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+        background-color: black;
+      }
+      .intro-picture:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+      }
+      .grid img {
+        width: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+      .dark{
+       background-image: linear-gradient( 85.2deg,  rgba(33,3,40,1) 7.5%, rgba(65,5,72,1) 88.7% );
+        color: white;
+      }
+      .dark .container {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      .dark a{
+        color: plum;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Dark theme</button>
+    <div class="container">
+      <h1>What is Piano?</h1>
+      <h2>My favorite hobby 🎹</h2>
+      <a href="https://en.wikipedia.org/wiki/Piano">
+        <img
+          src="https://images.unsplash.com/photo-1470019693664-1d202d2c0907?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+          class="intro-picture"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://images.unsplash.com/photo-1477233534935-f5e6fe7c1159?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <img
+          src="https://images.unsplash.com/photo-1479118013749-9f79d55a28d0?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <img
+          src="https://images.unsplash.com/photo-1497032205916-ac775f0649ae?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <img
+          src="https://images.unsplash.com/photo-1517578099694-8b23adec837c?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+      </div>
+      <p>
+        The piano is a keyboard instrument that produces sound when its keys are
+        depressed, through engagement of an action whose hammers strike strings.
+        Modern pianos have a row of 88 black and white keys, tuned to a
+        chromatic scale in equal temperament. A musician who specializes in
+        piano is called a pianist. There are two main types of piano: the grand
+        piano and the upright piano. The grand piano offers better sound and
+        more precise key control, making it the preferred choice when space and
+        budget allow. The grand piano is also considered a necessity in venues
+        hosting skilled pianists. The upright piano is more commonly used due to
+        its smaller size and lower cost.
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Piano">📖 Read on Wikipedia</a>
+      <button>Learn more</button>
+    </div>
+    <footer>Coded with 🩷 by <a href="*">Yuliia Movchan</a></footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        //body.classList.toggle("dark");
+        if(body.classList.contains("dark")){
+            body.classList.remove("dark");
+        } else{
+            body.classList.add("dark");
+        }
+        
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
